@@ -1,0 +1,183 @@
+html {
+
+    margin: 0;
+    
+    padding: 0;
+    
+    box-sizing: border-box
+    
+    }
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+.textoLorem{ 
+    color: aliceblue;
+    background-color: #13B8D4;
+    font-size: 20px;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+   padding: 20px 20px 20px 20px;
+    
+}
+
+
+/*header*/
+
+nav a{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:x-large;
+    color: #13B8D4;
+}
+
+nav{
+    background-color: #fff;
+    
+    
+}
+
+.fuentesNav{
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+
+
+
+.nav-item:hover {
+    background-color: #13B8D4;
+    color: #fff;
+}
+
+.logo{
+    width: 30vw;
+}
+
+
+.fondo{
+    background-image: url(../img/consultorio.jpg);
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+main{
+    height: 1000px;
+}
+
+/*footer*/
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 35px 20px;
+    height: 100px;
+    width: 100%;
+    
+}
+
+
+footer img{
+    width: 30px;
+}
+
+
+/*footer*/
+
+h1{
+    color: aliceblue;
+    background-color: #13B8D4;
+    height: 70px;
+}
+
+p{
+    font-size: medium;
+}
+
+form{
+    
+    /* Centrar el formulario en la página */
+    margin: 0 auto;
+    width: 700px;
+    /* Esquema del formulario */
+    padding: 5px;
+    border: 3px solid #CCC;
+   
+    background-color: #13B8D4;
+    color: #fff;
+    font-size: 25px;
+    
+}
+
+
+
+.fotosProductos{
+    width: 300px;
+    display: block;
+
+}
+
+.logoWatts{
+    width: 7vw;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+}
+
+.nosotros{
+    display: grid;
+    grid-template-areas:
+    "nosotrosImagenes1 nosotrosTexto nosotrosTexto"
+    "nosotrosImagenes2 nosotrosTexto nosotrosTexto"
+    "nosotrosImagenes3 nosotrosTexto nosotrosTexto"
+    ;
+    
+}
+
+.nosotrosImagenes1 {
+    width: 300px;
+    grid-area: nosotrosImagenes1;
+    margin: 30px 10px 10px 30px; 
+}
+
+.nosotrosImagenes2 {
+    width: 300px;
+    grid-area: nosotrosImagenes2;
+    margin: 30px 10px 10px 30px; 
+}
+
+.nosotrosImagenes3 {
+    width: 300px;
+    grid-area: nosotrosImagenes3;
+    margin: 30px 10px 10px 30px; 
+}
+
+.nosotrosTexto{
+    grid-area: nosotrosTexto;
+    font-weight: bold;
+    margin: 50px 20px 10px 50px;
+}
+
+
+@media (min-width:320px) and (max-width: 768px) {
+    .nosotrosImagenes1{ display: none;
+    }
+    .nosotrosImagenes2{ display: none;
+    }
+    .nosotrosImagenes3{ display: none;
+    }
+    
+    footer{
+        position: absolute;
+        top: 300%;
+    }
+
+    .logoWatts{
+        width: 15%;
+    }
+}
